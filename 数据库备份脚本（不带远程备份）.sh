@@ -1,7 +1,7 @@
 lujing=/var/backups/mysql                   #文件夹路径
 name="数据库备份_$(date +%Y-%m-%d_%H-%M-%S).sql" #文件名字符串+时间
 user=root                                   #该为数据库用户
-password='MySQL@329958'                     #改为数据库密码
+password='MySQLpasswd'                     #改为数据库密码
 sql_host=localhost
 if [ ! -d "$lujing" ]; then #-d选项用于检查目录是否存在，!表示逻辑非，如果目录不存在则条件为真
     mkdir -p "$lujing"      #如果备份文件夹不存在，则使用mkdir命令创建该文件夹。-p选项用于创建目录及其所有父级目录
